@@ -3,27 +3,26 @@
     <title>
         JavaScriptTest
     </title>
-    <script>
-        function FizzBuzz(){
-            let ouput = document.querySelector("#output");
-            for(i=1; i<=100; i++){
-                if(i%3 === 0 && i%5 !== 0){
-                    console.log('Fizz '+i);
-                    output.innerText += "Fizz "+i+"\n";
-                }else if(i%3 !== 0 && i%5 === 0){
-                    console.log('Buzz '+i);
-                    output.innerText += "Buzz "+i+"\n";
-                }else if(i%3 === 0 && i%5 === 0){
-                    console.log('FizzBuzz '+i);
-                    output.innerText += "FizzBuzz "+i+"\n";
-                }
-            }
-        }
-    </script>    
+    <script type="text/javascript" src="FizzBuzz.js"></script>
 </head>
 <body>
 
-<div id="output"></div>
-<button onclick="FizzBuzz();">FizzBuzz</button>
-
+<!-- <div id="output"></div>
+<button onclick="FizzBuzz();">FizzBuzz</button> -->
+<!-- <script>
+    let fizzbuzz = (start, end) => {
+        for(let i=start; i<=end; i++) {
+            if(i % 15 === 0) {
+                console.log('FizzBuzz ' + i);
+            }
+            else if(i % 3 === 0) {
+                console.log('Fizz ' + i);
+            }
+            else if(i % 5 === 0) {
+                console.log('Buzz ' + i);
+            }
+        }
+    }
+    fizzbuzz(1, 100);
+</script> -->
 </body>
